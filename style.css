@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  padding: 4px !important;
+  transition: top 0.4s;
+}
+nav li {
+  margin: 15px;
+  transition: 200ms ease-out;
+  font-family: "Nunito", sans-serif;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 50%, white 50%);
+  background-size: 250%;
+  transition: all 0.4s;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+
+.burger div {
+  height: 2px;
+  background-color: white;
+  margin: 4px;
+  width: 30px;
+}
+
+.big-text-showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/we_love_coffee.jpg");
+  height: 82vh;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+}
+.big-text-showcase h1 {
+  color: white;
+  padding-top: 5%;
+  font-size: 6rem;
+}
+.big-text-showcase p {
+  color: white;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.big-text-showcase i {
+  color: white;
+  font-size: 34px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  animation: float-arrow 1.8s infinite;
+  cursor: pointer;
+}
+
+.info_section {
+  overflow-x: hidden;
+  background-color: #fff;
+  margin-top: 35px;
+}
+.info_section h1 {
+  text-transform: uppercase;
+  color: #DBC181;
+  font-size: 46px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DBC181;
+}
+.info_section p {
+  color: #252525;
+}
+
+li:hover a {
+  background-position: 100%;
+  color: #313131 !important;
+  transform: translateX(16px);
+}
+
+.con,
+.special-con {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.bar {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #ffffff;
+  margin: 10px auto;
+}
+
+.con {
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all 0.7s ease;
+  -mox-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.col {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+.gallery {
+  height: 100vh;
+  padding: 40px;
+  background-color: #313131;
+}
+
+h1 {
+  color: white;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all 0.7s ease;
+  -mox-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.con:hover .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+.con:hover .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.con:hover .middle {
+  width: 0;
+}
+
+@keyframes float-arrow {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  li {
+    text-align: center;
+  }
+
+  .big-text-showcase h1 {
+    font-size: 15vw;
+  }
+  .big-text-showcase p {
+    font-size: 5vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
